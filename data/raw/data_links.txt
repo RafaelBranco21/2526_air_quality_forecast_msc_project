@@ -1,0 +1,26 @@
+##########################################
+#              Contaminants              #
+##########################################
+
+* https://opendata-ajuntament.barcelona.cat/data/en/dataset/contaminants-estacions-mesura-qualitat-aire/resource/c122329d-d26d-469e-bf9e-8efa10e4c127?view_id=0d7bd653-7981-430f-b658-f6c3f83057a2#additional-info
+
+(this one has the description of the fields)
+* https://opendata-ajuntament.barcelona.cat/data/en/dataset/contaminants-estacions-mesura-qualitat-aire
+
+#################################################################################################
+
+##########################################
+#                 Stations               #
+##########################################
+
+(this one has the description of the fields)
+* https://opendata-ajuntament.barcelona.cat/data/en/dataset/qualitat-aire-estacions-bcn
+
+
+#################################################################################################
+
+##########################################
+#                Measurements            #
+##########################################
+
+* https://opendata-ajuntament.barcelona.cat/data/en/dataset/qualitat-aire-detall-bcn

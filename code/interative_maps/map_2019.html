@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6594c04996cdf876673bd805997efba1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6594c04996cdf876673bd805997efba1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6594c04996cdf876673bd805997efba1 = L.map(
+                "map_6594c04996cdf876673bd805997efba1",
+                {
+                    center: [41.39524285714286, 2.1564714285714284],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8bbf164ed4e885b88fe290f17c448f4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+            var marker_090ccca019a9a64030ce98932fa2615f = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_fd813f84d2be6c993dddf524bce41280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_896b8f7a8f58724715b5bfbb11bcfdf5 = $(`<div id="html_896b8f7a8f58724715b5bfbb11bcfdf5" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 4</b></br><ul><li>"Station Name" -> "Barcelona - Poblenou'<li>"Location" -> "Plaça Josep Trueta (Pujades - Lope de Vega)'<li>"District Code" -> "10'<li>"District Name" -> "Sant Marti'<li>"Neighborhood Code" -> "68'<li>"Neighborhood Name" -> "el Poblenou'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.2045'<li>"Latitude" -> "41.4039'<li>"Contaminants Codes" -> "[8, 10, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'PM10', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_fd813f84d2be6c993dddf524bce41280.setContent(html_896b8f7a8f58724715b5bfbb11bcfdf5);
+            
+        
+
+        marker_090ccca019a9a64030ce98932fa2615f.bindPopup(popup_fd813f84d2be6c993dddf524bce41280)
+        ;
+
+        
+    
+    
+            var marker_7d6fbc389b970f06ca9e3482dde69ac1 = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_247c8fa6bb6827993fb13da197e8c7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76f0547c176b09c9f56c7ba172876efb = $(`<div id="html_76f0547c176b09c9f56c7ba172876efb" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 42</b></br><ul><li>"Station Name" -> "Barcelona - Sants'<li>"Location" -> "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)'<li>"District Code" -> "3'<li>"District Name" -> "Sants-Montjuic'<li>"Neighborhood Code" -> "18'<li>"Neighborhood Name" -> "Sants'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1331'<li>"Latitude" -> "41.3788'<li>"Contaminants Codes" -> "[8, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_247c8fa6bb6827993fb13da197e8c7e6.setContent(html_76f0547c176b09c9f56c7ba172876efb);
+            
+        
+
+        marker_7d6fbc389b970f06ca9e3482dde69ac1.bindPopup(popup_247c8fa6bb6827993fb13da197e8c7e6)
+        ;
+
+        
+    
+    
+            var marker_597e8deb547112db0e88b3eb60753174 = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c6501534da0c0e34ba627d4865adbfc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db060147933eca6aff9a3d58642d953f = $(`<div id="html_db060147933eca6aff9a3d58642d953f" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 43</b></br><ul><li>"Station Name" -> "Barcelona - Eixample'<li>"Location" -> "Av. Roma - c/ Comte Urgell'<li>"District Code" -> "5'<li>"District Name" -> "Eixample'<li>"Neighborhood Code" -> "9'<li>"Neighborhood Name" -> "la Nova Esquerra de l'Eixample'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1538'<li>"Latitude" -> "41.3853'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_c6501534da0c0e34ba627d4865adbfc7.setContent(html_db060147933eca6aff9a3d58642d953f);
+            
+        
+
+        marker_597e8deb547112db0e88b3eb60753174.bindPopup(popup_c6501534da0c0e34ba627d4865adbfc7)
+        ;
+
+        
+    
+    
+            var marker_a233e8567c9a5e20da39f45a40c1482b = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a7b62b951d1450f67c6707048bbc648c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9ae76d9a9ba6b9b8dcc317899cce71e = $(`<div id="html_b9ae76d9a9ba6b9b8dcc317899cce71e" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 44</b></br><ul><li>"Station Name" -> "Barcelona - Gràcia'<li>"Location" -> "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)'<li>"District Code" -> "6'<li>"District Name" -> "Gracia'<li>"Neighborhood Code" -> "31'<li>"Neighborhood Name" -> "la Vila de Gracia'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1534'<li>"Latitude" -> "41.3987'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_a7b62b951d1450f67c6707048bbc648c.setContent(html_b9ae76d9a9ba6b9b8dcc317899cce71e);
+            
+        
+
+        marker_a233e8567c9a5e20da39f45a40c1482b.bindPopup(popup_a7b62b951d1450f67c6707048bbc648c)
+        ;
+
+        
+    
+    
+            var marker_e2979307e7aa73ff2ace2dae314f5163 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2b8236a90729c71bb8a22ac05b2fc8a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_527da41045ad42c4278f9826e8631ea6 = $(`<div id="html_527da41045ad42c4278f9826e8631ea6" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 50</b></br><ul><li>"Station Name" -> "Barcelona - Ciutadella'<li>"Location" -> "Parc de la Ciutadella'<li>"District Code" -> "1'<li>"District Name" -> "Ciutat Vella'<li>"Neighborhood Code" -> "4'<li>"Neighborhood Name" -> "Sant Pere, Santa Caterina i la Ribera'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1874'<li>"Latitude" -> "41.3864'<li>"Contaminants Codes" -> "[8, 14, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_2b8236a90729c71bb8a22ac05b2fc8a6.setContent(html_527da41045ad42c4278f9826e8631ea6);
+            
+        
+
+        marker_e2979307e7aa73ff2ace2dae314f5163.bindPopup(popup_2b8236a90729c71bb8a22ac05b2fc8a6)
+        ;
+
+        
+    
+    
+            var marker_a028c75f8bea97f153882a2601568d9a = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_7078b083b8f3e78dfde5b2b23fcd6bce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cf55af45c6475ef914c54a0fc516a34 = $(`<div id="html_1cf55af45c6475ef914c54a0fc516a34" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 54</b></br><ul><li>"Station Name" -> "Barcelona - Vall Hebron'<li>"Location" -> "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella'<li>"District Code" -> "7'<li>"District Name" -> "Horta-Guinardo'<li>"Neighborhood Code" -> "41'<li>"Neighborhood Name" -> "la Vall d'Hebron'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.148'<li>"Latitude" -> "41.4261'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 12, 7]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']'</ul></div></div>`)[0];
+                popup_7078b083b8f3e78dfde5b2b23fcd6bce.setContent(html_1cf55af45c6475ef914c54a0fc516a34);
+            
+        
+
+        marker_a028c75f8bea97f153882a2601568d9a.bindPopup(popup_7078b083b8f3e78dfde5b2b23fcd6bce)
+        ;
+
+        
+    
+    
+            var marker_322fd8d04201d9d20f9c3ba697b0232b = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2ab8391b386c757ef945ead45eba8e56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba87473c1edb91284a7b7d555bf5f1e7 = $(`<div id="html_ba87473c1edb91284a7b7d555bf5f1e7" style="width: 100.0%; height: 100.0%;"><div><b>Station ID: 57</b></br><ul><li>"Station Name" -> "Barcelona - Palau Reial'<li>"Location" -> "c/ John Maynard Keynes - c/ de Jordi Girona'<li>"District Code" -> "4'<li>"District Name" -> "Les Corts'<li>"Neighborhood Code" -> "21'<li>"Neighborhood Name" -> "Pedralbes'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1151'<li>"Latitude" -> "41.3875'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_2ab8391b386c757ef945ead45eba8e56.setContent(html_ba87473c1edb91284a7b7d555bf5f1e7);
+            
+        
+
+        marker_322fd8d04201d9d20f9c3ba697b0232b.bindPopup(popup_2ab8391b386c757ef945ead45eba8e56)
+        ;
+
+        
+    
+    
+            var marker_e8644cb51891a6f150935bc67567f129 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_d78ada0ffc51206624d798c86df19bf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0ca23932ab8f65783d225a4760fe564 = $(`<div id="html_c0ca23932ab8f65783d225a4760fe564" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 4</b></br><ul><li>"Station Name" -> "Barcelona - Poblenou'<li>"Location" -> "Plaça Josep Trueta (Pujades - Lope de Vega)'<li>"District Code" -> "10'<li>"District Name" -> "Sant Marti'<li>"Neighborhood Code" -> "68'<li>"Neighborhood Name" -> "el Poblenou'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.2045'<li>"Latitude" -> "41.4039'<li>"Contaminants Codes" -> "[8, 10, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'PM10', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_d78ada0ffc51206624d798c86df19bf0.setContent(html_c0ca23932ab8f65783d225a4760fe564);
+            
+        
+
+        marker_e8644cb51891a6f150935bc67567f129.bindPopup(popup_d78ada0ffc51206624d798c86df19bf0)
+        ;
+
+        
+    
+    
+            var marker_8d0e0120ae957cd90ccb98764c7f5a0f = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_087594cee55953b2d2ac1359e7f232fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_213e92769543e6f629b1e5064800f789 = $(`<div id="html_213e92769543e6f629b1e5064800f789" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 42</b></br><ul><li>"Station Name" -> "Barcelona - Sants'<li>"Location" -> "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)'<li>"District Code" -> "3'<li>"District Name" -> "Sants-Montjuic'<li>"Neighborhood Code" -> "18'<li>"Neighborhood Name" -> "Sants'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1331'<li>"Latitude" -> "41.3788'<li>"Contaminants Codes" -> "[8, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_087594cee55953b2d2ac1359e7f232fb.setContent(html_213e92769543e6f629b1e5064800f789);
+            
+        
+
+        marker_8d0e0120ae957cd90ccb98764c7f5a0f.bindPopup(popup_087594cee55953b2d2ac1359e7f232fb)
+        ;
+
+        
+    
+    
+            var marker_2fdede6ccb399fc2157d043826be6b15 = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_22a3caa04532102bf9984795e58a2a2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b9c160bcc81f3deec1f0bd27e57c2a2 = $(`<div id="html_4b9c160bcc81f3deec1f0bd27e57c2a2" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 43</b></br><ul><li>"Station Name" -> "Barcelona - Eixample'<li>"Location" -> "Av. Roma - c/ Comte Urgell'<li>"District Code" -> "5'<li>"District Name" -> "Eixample'<li>"Neighborhood Code" -> "9'<li>"Neighborhood Name" -> "la Nova Esquerra de l'Eixample'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1538'<li>"Latitude" -> "41.3853'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_22a3caa04532102bf9984795e58a2a2b.setContent(html_4b9c160bcc81f3deec1f0bd27e57c2a2);
+            
+        
+
+        marker_2fdede6ccb399fc2157d043826be6b15.bindPopup(popup_22a3caa04532102bf9984795e58a2a2b)
+        ;
+
+        
+    
+    
+            var marker_addda0616c79fbd9148c4d1e7296ee85 = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a45395f21b9a19aad12c124446a68860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3b8a49eadd89dbc1d0bdb51a98b68ac = $(`<div id="html_d3b8a49eadd89dbc1d0bdb51a98b68ac" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 44</b></br><ul><li>"Station Name" -> "Barcelona - Gràcia'<li>"Location" -> "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)'<li>"District Code" -> "6'<li>"District Name" -> "Gracia'<li>"Neighborhood Code" -> "31'<li>"Neighborhood Name" -> "la Vila de Gracia'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1534'<li>"Latitude" -> "41.3987'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_a45395f21b9a19aad12c124446a68860.setContent(html_d3b8a49eadd89dbc1d0bdb51a98b68ac);
+            
+        
+
+        marker_addda0616c79fbd9148c4d1e7296ee85.bindPopup(popup_a45395f21b9a19aad12c124446a68860)
+        ;
+
+        
+    
+    
+            var marker_3612c8e2cc2c4999a5dea2fe359c4093 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_85ac122ba96791a3f0109946d8834c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91ad1fd99a6f09ed262795d734987ac6 = $(`<div id="html_91ad1fd99a6f09ed262795d734987ac6" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 50</b></br><ul><li>"Station Name" -> "Barcelona - Ciutadella'<li>"Location" -> "Parc de la Ciutadella'<li>"District Code" -> "1'<li>"District Name" -> "Ciutat Vella'<li>"Neighborhood Code" -> "4'<li>"Neighborhood Name" -> "Sant Pere, Santa Caterina i la Ribera'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1874'<li>"Latitude" -> "41.3864'<li>"Contaminants Codes" -> "[8, 14, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_85ac122ba96791a3f0109946d8834c93.setContent(html_91ad1fd99a6f09ed262795d734987ac6);
+            
+        
+
+        marker_3612c8e2cc2c4999a5dea2fe359c4093.bindPopup(popup_85ac122ba96791a3f0109946d8834c93)
+        ;
+
+        
+    
+    
+            var marker_a0e958191700154946ec276aab569cde = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_84236c1926bc530881fc6f756708eaaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3117bf02f755e846ffbc94f8a47ffe25 = $(`<div id="html_3117bf02f755e846ffbc94f8a47ffe25" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 54</b></br><ul><li>"Station Name" -> "Barcelona - Vall Hebron'<li>"Location" -> "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella'<li>"District Code" -> "7'<li>"District Name" -> "Horta-Guinardo'<li>"Neighborhood Code" -> "41'<li>"Neighborhood Name" -> "la Vall d'Hebron'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.148'<li>"Latitude" -> "41.4261'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 12, 7]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']'</ul></div></div>`)[0];
+                popup_84236c1926bc530881fc6f756708eaaa.setContent(html_3117bf02f755e846ffbc94f8a47ffe25);
+            
+        
+
+        marker_a0e958191700154946ec276aab569cde.bindPopup(popup_84236c1926bc530881fc6f756708eaaa)
+        ;
+
+        
+    
+    
+            var marker_06ed54d34fce8ce6ab9d1b7aa6caf9d3 = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c9dbbdc8ffbc4da7ed2811a2892ca73a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c265c21b922a105cb7a12d15cf3c0cb = $(`<div id="html_8c265c21b922a105cb7a12d15cf3c0cb" style="width: 100.0%; height: 100.0%;"><div style="min-width: 150px;" ><b>Station ID: 57</b></br><ul><li>"Station Name" -> "Barcelona - Palau Reial'<li>"Location" -> "c/ John Maynard Keynes - c/ de Jordi Girona'<li>"District Code" -> "4'<li>"District Name" -> "Les Corts'<li>"Neighborhood Code" -> "21'<li>"Neighborhood Name" -> "Pedralbes'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1151'<li>"Latitude" -> "41.3875'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_c9dbbdc8ffbc4da7ed2811a2892ca73a.setContent(html_8c265c21b922a105cb7a12d15cf3c0cb);
+            
+        
+
+        marker_06ed54d34fce8ce6ab9d1b7aa6caf9d3.bindPopup(popup_c9dbbdc8ffbc4da7ed2811a2892ca73a)
+        ;
+
+        
+    
+    
+            var marker_e18f5c5e9cf895922fddee0ef025e70d = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a24cd69ae620feb4d92bede5ad2215d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f050808925fbea9a15688146a83a3e8c = $(`<div id="html_f050808925fbea9a15688146a83a3e8c" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 4</b></br><ul><li>"Station Name" -> "Barcelona - Poblenou'<li>"Location" -> "Plaça Josep Trueta (Pujades - Lope de Vega)'<li>"District Code" -> "10'<li>"District Name" -> "Sant Marti'<li>"Neighborhood Code" -> "68'<li>"Neighborhood Name" -> "el Poblenou'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.2045'<li>"Latitude" -> "41.4039'<li>"Contaminants Codes" -> "[8, 10, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'PM10', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_a24cd69ae620feb4d92bede5ad2215d9.setContent(html_f050808925fbea9a15688146a83a3e8c);
+            
+        
+
+        marker_e18f5c5e9cf895922fddee0ef025e70d.bindPopup(popup_a24cd69ae620feb4d92bede5ad2215d9)
+        ;
+
+        
+    
+    
+            var marker_0155aa6c11b0a805b3e7591488528d66 = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_e75a31af802708b1f6246bcda4ede7cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2934bcc32fc24a65e7f38b8991a4c2bd = $(`<div id="html_2934bcc32fc24a65e7f38b8991a4c2bd" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 42</b></br><ul><li>"Station Name" -> "Barcelona - Sants'<li>"Location" -> "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)'<li>"District Code" -> "3'<li>"District Name" -> "Sants-Montjuic'<li>"Neighborhood Code" -> "18'<li>"Neighborhood Name" -> "Sants'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1331'<li>"Latitude" -> "41.3788'<li>"Contaminants Codes" -> "[8, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_e75a31af802708b1f6246bcda4ede7cf.setContent(html_2934bcc32fc24a65e7f38b8991a4c2bd);
+            
+        
+
+        marker_0155aa6c11b0a805b3e7591488528d66.bindPopup(popup_e75a31af802708b1f6246bcda4ede7cf)
+        ;
+
+        
+    
+    
+            var marker_87eeb6c1d7c8c0e2bb111041dec5a0cd = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_89ad30373403aa78c040c07c0b546f45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97a7380fc8626ae05732d20cc4d8c84d = $(`<div id="html_97a7380fc8626ae05732d20cc4d8c84d" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 43</b></br><ul><li>"Station Name" -> "Barcelona - Eixample'<li>"Location" -> "Av. Roma - c/ Comte Urgell'<li>"District Code" -> "5'<li>"District Name" -> "Eixample'<li>"Neighborhood Code" -> "9'<li>"Neighborhood Name" -> "la Nova Esquerra de l'Eixample'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1538'<li>"Latitude" -> "41.3853'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_89ad30373403aa78c040c07c0b546f45.setContent(html_97a7380fc8626ae05732d20cc4d8c84d);
+            
+        
+
+        marker_87eeb6c1d7c8c0e2bb111041dec5a0cd.bindPopup(popup_89ad30373403aa78c040c07c0b546f45)
+        ;
+
+        
+    
+    
+            var marker_82923e640208d5067b20765e1446b6d8 = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c12ca3658b087c6badf41291ea6dd9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f52957d6a0266af839a5e27b6e2eaa2f = $(`<div id="html_f52957d6a0266af839a5e27b6e2eaa2f" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 44</b></br><ul><li>"Station Name" -> "Barcelona - Gràcia'<li>"Location" -> "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)'<li>"District Code" -> "6'<li>"District Name" -> "Gracia'<li>"Neighborhood Code" -> "31'<li>"Neighborhood Name" -> "la Vila de Gracia'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1534'<li>"Latitude" -> "41.3987'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_c12ca3658b087c6badf41291ea6dd9cf.setContent(html_f52957d6a0266af839a5e27b6e2eaa2f);
+            
+        
+
+        marker_82923e640208d5067b20765e1446b6d8.bindPopup(popup_c12ca3658b087c6badf41291ea6dd9cf)
+        ;
+
+        
+    
+    
+            var marker_bc67277777bdfb27bd80c39ab57e3d8f = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c79d42780bbd36949c1dbf8581490c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ebf64c601ba89449608a48500c68df5 = $(`<div id="html_8ebf64c601ba89449608a48500c68df5" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 50</b></br><ul><li>"Station Name" -> "Barcelona - Ciutadella'<li>"Location" -> "Parc de la Ciutadella'<li>"District Code" -> "1'<li>"District Name" -> "Ciutat Vella'<li>"Neighborhood Code" -> "4'<li>"Neighborhood Name" -> "Sant Pere, Santa Caterina i la Ribera'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1874'<li>"Latitude" -> "41.3864'<li>"Contaminants Codes" -> "[8, 14, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_c79d42780bbd36949c1dbf8581490c93.setContent(html_8ebf64c601ba89449608a48500c68df5);
+            
+        
+
+        marker_bc67277777bdfb27bd80c39ab57e3d8f.bindPopup(popup_c79d42780bbd36949c1dbf8581490c93)
+        ;
+
+        
+    
+    
+            var marker_ec29310b57fa414e4d24b0c92cd02109 = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a792cc33f2a0fdef1275c859dd63ed82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72c366146068360aca2a5b4a2d745af5 = $(`<div id="html_72c366146068360aca2a5b4a2d745af5" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 54</b></br><ul><li>"Station Name" -> "Barcelona - Vall Hebron'<li>"Location" -> "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella'<li>"District Code" -> "7'<li>"District Name" -> "Horta-Guinardo'<li>"Neighborhood Code" -> "41'<li>"Neighborhood Name" -> "la Vall d'Hebron'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.148'<li>"Latitude" -> "41.4261'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 12, 7]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']'</ul></div></div>`)[0];
+                popup_a792cc33f2a0fdef1275c859dd63ed82.setContent(html_72c366146068360aca2a5b4a2d745af5);
+            
+        
+
+        marker_ec29310b57fa414e4d24b0c92cd02109.bindPopup(popup_a792cc33f2a0fdef1275c859dd63ed82)
+        ;
+
+        
+    
+    
+            var marker_cca3465a2ec994caf2b34d7fb6ff0332 = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_ef61c02cfad9f54d9ce9ead8ed145f74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be3d19a201679478a57cf1721f62167 = $(`<div id="html_3be3d19a201679478a57cf1721f62167" style="width: 100.0%; height: 100.0%;"><div style="min-width: 250px;" ><b>Station ID: 57</b></br><ul><li>"Station Name" -> "Barcelona - Palau Reial'<li>"Location" -> "c/ John Maynard Keynes - c/ de Jordi Girona'<li>"District Code" -> "4'<li>"District Name" -> "Les Corts'<li>"Neighborhood Code" -> "21'<li>"Neighborhood Name" -> "Pedralbes'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1151'<li>"Latitude" -> "41.3875'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_ef61c02cfad9f54d9ce9ead8ed145f74.setContent(html_3be3d19a201679478a57cf1721f62167);
+            
+        
+
+        marker_cca3465a2ec994caf2b34d7fb6ff0332.bindPopup(popup_ef61c02cfad9f54d9ce9ead8ed145f74)
+        ;
+
+        
+    
+    
+            var marker_174a301b7ec53da41b4801270f4fefa0 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_1e0b5b63a2d2cd9d2bc92022bc521b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0199c86b103f1862786a04d074198b1f = $(`<div id="html_0199c86b103f1862786a04d074198b1f" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 4</b></br><ul><li>"Station Name" -> "Barcelona - Poblenou'<li>"Location" -> "Plaça Josep Trueta (Pujades - Lope de Vega)'<li>"District Code" -> "10'<li>"District Name" -> "Sant Marti'<li>"Neighborhood Code" -> "68'<li>"Neighborhood Name" -> "el Poblenou'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.2045'<li>"Latitude" -> "41.4039'<li>"Contaminants Codes" -> "[8, 10, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'PM10', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_1e0b5b63a2d2cd9d2bc92022bc521b66.setContent(html_0199c86b103f1862786a04d074198b1f);
+            
+        
+
+        marker_174a301b7ec53da41b4801270f4fefa0.bindPopup(popup_1e0b5b63a2d2cd9d2bc92022bc521b66)
+        ;
+
+        
+    
+    
+            var marker_a1184c8347426925f26497de4591a63e = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_edd1be38d6c99760924d83ea45684329 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d621d8e5e8cbedf31ab63bc7bf1263b7 = $(`<div id="html_d621d8e5e8cbedf31ab63bc7bf1263b7" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 42</b></br><ul><li>"Station Name" -> "Barcelona - Sants'<li>"Location" -> "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)'<li>"District Code" -> "3'<li>"District Name" -> "Sants-Montjuic'<li>"Neighborhood Code" -> "18'<li>"Neighborhood Name" -> "Sants'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1331'<li>"Latitude" -> "41.3788'<li>"Contaminants Codes" -> "[8, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_edd1be38d6c99760924d83ea45684329.setContent(html_d621d8e5e8cbedf31ab63bc7bf1263b7);
+            
+        
+
+        marker_a1184c8347426925f26497de4591a63e.bindPopup(popup_edd1be38d6c99760924d83ea45684329)
+        ;
+
+        
+    
+    
+            var marker_41f9c994defd5850a8f33e5825847e1e = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_b5d21562ba41bd0c5cd92530fecc1d4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64ca793060ea1e1bd240432fbb642a5c = $(`<div id="html_64ca793060ea1e1bd240432fbb642a5c" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 43</b></br><ul><li>"Station Name" -> "Barcelona - Eixample'<li>"Location" -> "Av. Roma - c/ Comte Urgell'<li>"District Code" -> "5'<li>"District Name" -> "Eixample'<li>"Neighborhood Code" -> "9'<li>"Neighborhood Name" -> "la Nova Esquerra de l'Eixample'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1538'<li>"Latitude" -> "41.3853'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_b5d21562ba41bd0c5cd92530fecc1d4b.setContent(html_64ca793060ea1e1bd240432fbb642a5c);
+            
+        
+
+        marker_41f9c994defd5850a8f33e5825847e1e.bindPopup(popup_b5d21562ba41bd0c5cd92530fecc1d4b)
+        ;
+
+        
+    
+    
+            var marker_261eb8fa4ba812d63372bb0bce47cbca = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_600e78c7902dc12495409bf6daf79326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b87775153c42a387cf545fcddde9750 = $(`<div id="html_7b87775153c42a387cf545fcddde9750" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 44</b></br><ul><li>"Station Name" -> "Barcelona - Gràcia'<li>"Location" -> "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)'<li>"District Code" -> "6'<li>"District Name" -> "Gracia'<li>"Neighborhood Code" -> "31'<li>"Neighborhood Name" -> "la Vila de Gracia'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Trànsit'<li>"Longitude" -> "2.1534'<li>"Latitude" -> "41.3987'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_600e78c7902dc12495409bf6daf79326.setContent(html_7b87775153c42a387cf545fcddde9750);
+            
+        
+
+        marker_261eb8fa4ba812d63372bb0bce47cbca.bindPopup(popup_600e78c7902dc12495409bf6daf79326)
+        ;
+
+        
+    
+    
+            var marker_59a2790dcbd2b9921b903f949b5583f7 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_ce527af084aecfc8e558f03db06f8112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b216249eae5facf1e4fb2a96df8ca05e = $(`<div id="html_b216249eae5facf1e4fb2a96df8ca05e" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 50</b></br><ul><li>"Station Name" -> "Barcelona - Ciutadella'<li>"Location" -> "Parc de la Ciutadella'<li>"District Code" -> "1'<li>"District Name" -> "Ciutat Vella'<li>"Neighborhood Code" -> "4'<li>"Neighborhood Name" -> "Sant Pere, Santa Caterina i la Ribera'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1874'<li>"Latitude" -> "41.3864'<li>"Contaminants Codes" -> "[8, 14, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_ce527af084aecfc8e558f03db06f8112.setContent(html_b216249eae5facf1e4fb2a96df8ca05e);
+            
+        
+
+        marker_59a2790dcbd2b9921b903f949b5583f7.bindPopup(popup_ce527af084aecfc8e558f03db06f8112)
+        ;
+
+        
+    
+    
+            var marker_68d3338c0df574c074c9a5ce6b0a84ed = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_5d25d9eab3ab2d4949763ee63bf0d6da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_799c03fd9a47e0ade470f8ad71db82e6 = $(`<div id="html_799c03fd9a47e0ade470f8ad71db82e6" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 54</b></br><ul><li>"Station Name" -> "Barcelona - Vall Hebron'<li>"Location" -> "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella'<li>"District Code" -> "7'<li>"District Name" -> "Horta-Guinardo'<li>"Neighborhood Code" -> "41'<li>"Neighborhood Name" -> "la Vall d'Hebron'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.148'<li>"Latitude" -> "41.4261'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 12, 7]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']'</ul></div></div>`)[0];
+                popup_5d25d9eab3ab2d4949763ee63bf0d6da.setContent(html_799c03fd9a47e0ade470f8ad71db82e6);
+            
+        
+
+        marker_68d3338c0df574c074c9a5ce6b0a84ed.bindPopup(popup_5d25d9eab3ab2d4949763ee63bf0d6da)
+        ;
+
+        
+    
+    
+            var marker_7f94eb63c91ed327823eaf9707c67c44 = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_04b5eea1b10c976c2a3ac86b99afaddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eac062c0352bd5c425457952bb122850 = $(`<div id="html_eac062c0352bd5c425457952bb122850" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 57</b></br><ul><li>"Station Name" -> "Barcelona - Palau Reial'<li>"Location" -> "c/ John Maynard Keynes - c/ de Jordi Girona'<li>"District Code" -> "4'<li>"District Name" -> "Les Corts'<li>"Neighborhood Code" -> "21'<li>"Neighborhood Name" -> "Pedralbes'<li>"Station Class" -> "Urbana'<li>"Station Sub-Class" -> "Fons'<li>"Longitude" -> "2.1151'<li>"Latitude" -> "41.3875'<li>"Contaminants Codes" -> "[8, 14, 10, 1, 6, 7, 12]'<li>"Contaminants Names" -> "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']'</ul></div></div>`)[0];
+                popup_04b5eea1b10c976c2a3ac86b99afaddf.setContent(html_eac062c0352bd5c425457952bb122850);
+            
+        
+
+        marker_7f94eb63c91ed327823eaf9707c67c44.bindPopup(popup_04b5eea1b10c976c2a3ac86b99afaddf)
+        ;
+
+        
+    
+    
+            var marker_e287fe275ba0a7fd5b523fc760d97ec9 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_0a7856500591db6099657b66a76192e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87b289704f4792c59ec7fd7c9338255d = $(`<div id="html_87b289704f4792c59ec7fd7c9338255d" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 4</b></br><ul><li>Station Name -> Barcelona - Poblenou<li>Location -> Plaça Josep Trueta (Pujades - Lope de Vega)<li>District Code -> 10<li>District Name -> Sant Marti<li>Neighborhood Code -> 68<li>Neighborhood Name -> el Poblenou<li>Station Class -> Urbana<li>Station Sub-Class -> Fons<li>Longitude -> 2.2045<li>Latitude -> 41.4039<li>Contaminants Codes -> [8, 10, 7, 12]<li>Contaminants Names -> ['NO2', 'PM10', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_0a7856500591db6099657b66a76192e5.setContent(html_87b289704f4792c59ec7fd7c9338255d);
+            
+        
+
+        marker_e287fe275ba0a7fd5b523fc760d97ec9.bindPopup(popup_0a7856500591db6099657b66a76192e5)
+        ;
+
+        
+    
+    
+            var marker_ae49e2e7fffb391c5ce3288afbaed9bc = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a3bd29849bad863e5b8c015957192d88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afa9eee76803f65855b294344bbb31e = $(`<div id="html_1afa9eee76803f65855b294344bbb31e" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 42</b></br><ul><li>Station Name -> Barcelona - Sants<li>Location -> Jardins de Can Mantega (Joan Güell - Violant d’Hongria)<li>District Code -> 3<li>District Name -> Sants-Montjuic<li>Neighborhood Code -> 18<li>Neighborhood Name -> Sants<li>Station Class -> Urbana<li>Station Sub-Class -> Fons<li>Longitude -> 2.1331<li>Latitude -> 41.3788<li>Contaminants Codes -> [8, 7, 12]<li>Contaminants Names -> ['NO2', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_a3bd29849bad863e5b8c015957192d88.setContent(html_1afa9eee76803f65855b294344bbb31e);
+            
+        
+
+        marker_ae49e2e7fffb391c5ce3288afbaed9bc.bindPopup(popup_a3bd29849bad863e5b8c015957192d88)
+        ;
+
+        
+    
+    
+            var marker_1fe0f97c43bc7e2b0f8ddbfb5fe67525 = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c12fba8c0902a0613fc78d371a000255 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3f1c2303a4e9198b5f5d26d6275f802 = $(`<div id="html_d3f1c2303a4e9198b5f5d26d6275f802" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 43</b></br><ul><li>Station Name -> Barcelona - Eixample<li>Location -> Av. Roma - c/ Comte Urgell<li>District Code -> 5<li>District Name -> Eixample<li>Neighborhood Code -> 9<li>Neighborhood Name -> la Nova Esquerra de l'Eixample<li>Station Class -> Urbana<li>Station Sub-Class -> Trànsit<li>Longitude -> 2.1538<li>Latitude -> 41.3853<li>Contaminants Codes -> [8, 14, 10, 1, 6, 7, 12]<li>Contaminants Names -> ['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_c12fba8c0902a0613fc78d371a000255.setContent(html_d3f1c2303a4e9198b5f5d26d6275f802);
+            
+        
+
+        marker_1fe0f97c43bc7e2b0f8ddbfb5fe67525.bindPopup(popup_c12fba8c0902a0613fc78d371a000255)
+        ;
+
+        
+    
+    
+            var marker_264f07a15432a74e1334f9cc9b649f06 = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_ddada37aa578a4d9f068c217311e6566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5dc126ec2cc0aa8c71cb4d639789411 = $(`<div id="html_b5dc126ec2cc0aa8c71cb4d639789411" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 44</b></br><ul><li>Station Name -> Barcelona - Gràcia<li>Location -> Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)<li>District Code -> 6<li>District Name -> Gracia<li>Neighborhood Code -> 31<li>Neighborhood Name -> la Vila de Gracia<li>Station Class -> Urbana<li>Station Sub-Class -> Trànsit<li>Longitude -> 2.1534<li>Latitude -> 41.3987<li>Contaminants Codes -> [8, 14, 10, 1, 6, 7, 12]<li>Contaminants Names -> ['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_ddada37aa578a4d9f068c217311e6566.setContent(html_b5dc126ec2cc0aa8c71cb4d639789411);
+            
+        
+
+        marker_264f07a15432a74e1334f9cc9b649f06.bindPopup(popup_ddada37aa578a4d9f068c217311e6566)
+        ;
+
+        
+    
+    
+            var marker_d20c8ba99ffb418840be14ddfde5fea2 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_27dfb518f80df66f645352dc9fc5c144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e443185d86e02a73f87aca0012cb19 = $(`<div id="html_c8e443185d86e02a73f87aca0012cb19" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 50</b></br><ul><li>Station Name -> Barcelona - Ciutadella<li>Location -> Parc de la Ciutadella<li>District Code -> 1<li>District Name -> Ciutat Vella<li>Neighborhood Code -> 4<li>Neighborhood Name -> Sant Pere, Santa Caterina i la Ribera<li>Station Class -> Urbana<li>Station Sub-Class -> Fons<li>Longitude -> 2.1874<li>Latitude -> 41.3864<li>Contaminants Codes -> [8, 14, 7, 12]<li>Contaminants Names -> ['NO2', 'O3', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_27dfb518f80df66f645352dc9fc5c144.setContent(html_c8e443185d86e02a73f87aca0012cb19);
+            
+        
+
+        marker_d20c8ba99ffb418840be14ddfde5fea2.bindPopup(popup_27dfb518f80df66f645352dc9fc5c144)
+        ;
+
+        
+    
+    
+            var marker_ee185c2f21381263f59e226894efd139 = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_3959210d1c17b3c3c5f3f68ed299237a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_701ef17f1253a778feaafb986dfd98d3 = $(`<div id="html_701ef17f1253a778feaafb986dfd98d3" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 54</b></br><ul><li>Station Name -> Barcelona - Vall Hebron<li>Location -> Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella<li>District Code -> 7<li>District Name -> Horta-Guinardo<li>Neighborhood Code -> 41<li>Neighborhood Name -> la Vall d'Hebron<li>Station Class -> Urbana<li>Station Sub-Class -> Fons<li>Longitude -> 2.148<li>Latitude -> 41.4261<li>Contaminants Codes -> [8, 14, 10, 1, 6, 12, 7]<li>Contaminants Names -> ['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']</ul></div></div>`)[0];
+                popup_3959210d1c17b3c3c5f3f68ed299237a.setContent(html_701ef17f1253a778feaafb986dfd98d3);
+            
+        
+
+        marker_ee185c2f21381263f59e226894efd139.bindPopup(popup_3959210d1c17b3c3c5f3f68ed299237a)
+        ;
+
+        
+    
+    
+            var marker_aa4a3354df017fcec2147247cf5945ba = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_49b7cf6e92e23c6e1ed6c2dd8c6d2dc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b7141fda15c3582cbc3ace2a55d2d9f = $(`<div id="html_4b7141fda15c3582cbc3ace2a55d2d9f" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 57</b></br><ul><li>Station Name -> Barcelona - Palau Reial<li>Location -> c/ John Maynard Keynes - c/ de Jordi Girona<li>District Code -> 4<li>District Name -> Les Corts<li>Neighborhood Code -> 21<li>Neighborhood Name -> Pedralbes<li>Station Class -> Urbana<li>Station Sub-Class -> Fons<li>Longitude -> 2.1151<li>Latitude -> 41.3875<li>Contaminants Codes -> [8, 14, 10, 1, 6, 7, 12]<li>Contaminants Names -> ['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']</ul></div></div>`)[0];
+                popup_49b7cf6e92e23c6e1ed6c2dd8c6d2dc3.setContent(html_4b7141fda15c3582cbc3ace2a55d2d9f);
+            
+        
+
+        marker_aa4a3354df017fcec2147247cf5945ba.bindPopup(popup_49b7cf6e92e23c6e1ed6c2dd8c6d2dc3)
+        ;
+
+        
+    
+    
+            var marker_e4e67461d5d9855fdd243c62d79a3f18 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_b01afb93fe05eb15e5b3375a05684a79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2184f2de64b2c543d827b7862385552a = $(`<div id="html_2184f2de64b2c543d827b7862385552a" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 4</b></br><ul><li>Station Name -- "Barcelona - Poblenou"<li>Location -- "Plaça Josep Trueta (Pujades - Lope de Vega)"<li>District Code -- "10"<li>District Name -- "Sant Marti"<li>Neighborhood Code -- "68"<li>Neighborhood Name -- "el Poblenou"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.2045"<li>Latitude -- "41.4039"<li>Contaminants Codes -- "[8, 10, 7, 12]"<li>Contaminants Names -- "['NO2', 'PM10', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_b01afb93fe05eb15e5b3375a05684a79.setContent(html_2184f2de64b2c543d827b7862385552a);
+            
+        
+
+        marker_e4e67461d5d9855fdd243c62d79a3f18.bindPopup(popup_b01afb93fe05eb15e5b3375a05684a79)
+        ;
+
+        
+    
+    
+            var marker_416ee2380aa3a663dd3537682d819a6c = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_c00e08d78b7360179fc701d5664544a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b636d47e044a0a79ded31348a8c30a9 = $(`<div id="html_2b636d47e044a0a79ded31348a8c30a9" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 42</b></br><ul><li>Station Name -- "Barcelona - Sants"<li>Location -- "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)"<li>District Code -- "3"<li>District Name -- "Sants-Montjuic"<li>Neighborhood Code -- "18"<li>Neighborhood Name -- "Sants"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1331"<li>Latitude -- "41.3788"<li>Contaminants Codes -- "[8, 7, 12]"<li>Contaminants Names -- "['NO2', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_c00e08d78b7360179fc701d5664544a9.setContent(html_2b636d47e044a0a79ded31348a8c30a9);
+            
+        
+
+        marker_416ee2380aa3a663dd3537682d819a6c.bindPopup(popup_c00e08d78b7360179fc701d5664544a9)
+        ;
+
+        
+    
+    
+            var marker_66e4e274fee47cd002e2a34e363497e5 = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_495807be415bad7f91b7080316011385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b2a23917b506b553ba6bbda178ffb9c = $(`<div id="html_4b2a23917b506b553ba6bbda178ffb9c" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 43</b></br><ul><li>Station Name -- "Barcelona - Eixample"<li>Location -- "Av. Roma - c/ Comte Urgell"<li>District Code -- "5"<li>District Name -- "Eixample"<li>Neighborhood Code -- "9"<li>Neighborhood Name -- "la Nova Esquerra de l'Eixample"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1538"<li>Latitude -- "41.3853"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_495807be415bad7f91b7080316011385.setContent(html_4b2a23917b506b553ba6bbda178ffb9c);
+            
+        
+
+        marker_66e4e274fee47cd002e2a34e363497e5.bindPopup(popup_495807be415bad7f91b7080316011385)
+        ;
+
+        
+    
+    
+            var marker_80e9cf74361c87cb371c90282ccc137c = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_19be9f2935db298cd234e86f9a54039a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3924fa52635b5cb14e062af17002c5a9 = $(`<div id="html_3924fa52635b5cb14e062af17002c5a9" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 44</b></br><ul><li>Station Name -- "Barcelona - Gràcia"<li>Location -- "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)"<li>District Code -- "6"<li>District Name -- "Gracia"<li>Neighborhood Code -- "31"<li>Neighborhood Name -- "la Vila de Gracia"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1534"<li>Latitude -- "41.3987"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_19be9f2935db298cd234e86f9a54039a.setContent(html_3924fa52635b5cb14e062af17002c5a9);
+            
+        
+
+        marker_80e9cf74361c87cb371c90282ccc137c.bindPopup(popup_19be9f2935db298cd234e86f9a54039a)
+        ;
+
+        
+    
+    
+            var marker_c12546f360ec588b17bb3bda543dc8c7 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_ef55f3cafe1ce0eae271976b01ee06d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6b0300b56a7ce549a1451d4446935ee = $(`<div id="html_e6b0300b56a7ce549a1451d4446935ee" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 50</b></br><ul><li>Station Name -- "Barcelona - Ciutadella"<li>Location -- "Parc de la Ciutadella"<li>District Code -- "1"<li>District Name -- "Ciutat Vella"<li>Neighborhood Code -- "4"<li>Neighborhood Name -- "Sant Pere, Santa Caterina i la Ribera"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1874"<li>Latitude -- "41.3864"<li>Contaminants Codes -- "[8, 14, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_ef55f3cafe1ce0eae271976b01ee06d4.setContent(html_e6b0300b56a7ce549a1451d4446935ee);
+            
+        
+
+        marker_c12546f360ec588b17bb3bda543dc8c7.bindPopup(popup_ef55f3cafe1ce0eae271976b01ee06d4)
+        ;
+
+        
+    
+    
+            var marker_9441d6f9fbbca8be6929a479be6b3310 = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_792228ea0dcc97a6474917c495b7c90c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d702dfcb97572e5413ed053a195bb562 = $(`<div id="html_d702dfcb97572e5413ed053a195bb562" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 54</b></br><ul><li>Station Name -- "Barcelona - Vall Hebron"<li>Location -- "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella"<li>District Code -- "7"<li>District Name -- "Horta-Guinardo"<li>Neighborhood Code -- "41"<li>Neighborhood Name -- "la Vall d'Hebron"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.148"<li>Latitude -- "41.4261"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 12, 7]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']"</ul></div></div>`)[0];
+                popup_792228ea0dcc97a6474917c495b7c90c.setContent(html_d702dfcb97572e5413ed053a195bb562);
+            
+        
+
+        marker_9441d6f9fbbca8be6929a479be6b3310.bindPopup(popup_792228ea0dcc97a6474917c495b7c90c)
+        ;
+
+        
+    
+    
+            var marker_1ec5ff44ab83e5bee258be03d3f204cd = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_9353a390f77c559500a09a52bb56fa9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3958379813420aac02b63e1e4d6c8f4f = $(`<div id="html_3958379813420aac02b63e1e4d6c8f4f" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station ID: 57</b></br><ul><li>Station Name -- "Barcelona - Palau Reial"<li>Location -- "c/ John Maynard Keynes - c/ de Jordi Girona"<li>District Code -- "4"<li>District Name -- "Les Corts"<li>Neighborhood Code -- "21"<li>Neighborhood Name -- "Pedralbes"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1151"<li>Latitude -- "41.3875"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_9353a390f77c559500a09a52bb56fa9f.setContent(html_3958379813420aac02b63e1e4d6c8f4f);
+            
+        
+
+        marker_1ec5ff44ab83e5bee258be03d3f204cd.bindPopup(popup_9353a390f77c559500a09a52bb56fa9f)
+        ;
+
+        
+    
+    
+            var marker_afc6b21c18e6ac19c3b4672c695cfbf7 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2da06660a7f572fde883edbd1658e7c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d915874d915835b75188ae1edcf2d537 = $(`<div id="html_d915874d915835b75188ae1edcf2d537" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 4</b></br></hr><ul><li>Station Name -- "Barcelona - Poblenou"<li>Location -- "Plaça Josep Trueta (Pujades - Lope de Vega)"<li>District Code -- "10"<li>District Name -- "Sant Marti"<li>Neighborhood Code -- "68"<li>Neighborhood Name -- "el Poblenou"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.2045"<li>Latitude -- "41.4039"<li>Contaminants Codes -- "[8, 10, 7, 12]"<li>Contaminants Names -- "['NO2', 'PM10', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_2da06660a7f572fde883edbd1658e7c1.setContent(html_d915874d915835b75188ae1edcf2d537);
+            
+        
+
+        marker_afc6b21c18e6ac19c3b4672c695cfbf7.bindPopup(popup_2da06660a7f572fde883edbd1658e7c1)
+        ;
+
+        
+    
+    
+            var marker_d2e533e402365554b5cb9042656db5fd = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_0ae6caf0f65939e9c5c504e103ff0e34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c31ec8cdac230859425929bc52760720 = $(`<div id="html_c31ec8cdac230859425929bc52760720" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 42</b></br></hr><ul><li>Station Name -- "Barcelona - Sants"<li>Location -- "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)"<li>District Code -- "3"<li>District Name -- "Sants-Montjuic"<li>Neighborhood Code -- "18"<li>Neighborhood Name -- "Sants"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1331"<li>Latitude -- "41.3788"<li>Contaminants Codes -- "[8, 7, 12]"<li>Contaminants Names -- "['NO2', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_0ae6caf0f65939e9c5c504e103ff0e34.setContent(html_c31ec8cdac230859425929bc52760720);
+            
+        
+
+        marker_d2e533e402365554b5cb9042656db5fd.bindPopup(popup_0ae6caf0f65939e9c5c504e103ff0e34)
+        ;
+
+        
+    
+    
+            var marker_88142adc7a45af3bb4ee7efcbcd120ab = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_7746629244389914feb8c504f18fe213 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f8966dfcbc74ed644257e1dd0486edc = $(`<div id="html_0f8966dfcbc74ed644257e1dd0486edc" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 43</b></br></hr><ul><li>Station Name -- "Barcelona - Eixample"<li>Location -- "Av. Roma - c/ Comte Urgell"<li>District Code -- "5"<li>District Name -- "Eixample"<li>Neighborhood Code -- "9"<li>Neighborhood Name -- "la Nova Esquerra de l'Eixample"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1538"<li>Latitude -- "41.3853"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_7746629244389914feb8c504f18fe213.setContent(html_0f8966dfcbc74ed644257e1dd0486edc);
+            
+        
+
+        marker_88142adc7a45af3bb4ee7efcbcd120ab.bindPopup(popup_7746629244389914feb8c504f18fe213)
+        ;
+
+        
+    
+    
+            var marker_8dab6f58c86b4162dc367ebd5ed37d5a = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_911807b4b6396bc9bdb250da9ceedcb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a02f442c597127cf8e798994eb8b518 = $(`<div id="html_0a02f442c597127cf8e798994eb8b518" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 44</b></br></hr><ul><li>Station Name -- "Barcelona - Gràcia"<li>Location -- "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)"<li>District Code -- "6"<li>District Name -- "Gracia"<li>Neighborhood Code -- "31"<li>Neighborhood Name -- "la Vila de Gracia"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1534"<li>Latitude -- "41.3987"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_911807b4b6396bc9bdb250da9ceedcb7.setContent(html_0a02f442c597127cf8e798994eb8b518);
+            
+        
+
+        marker_8dab6f58c86b4162dc367ebd5ed37d5a.bindPopup(popup_911807b4b6396bc9bdb250da9ceedcb7)
+        ;
+
+        
+    
+    
+            var marker_bb901bd6de43ca09b124bd8759e7e043 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_4da2209528816263589633ae95087278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef5a5afd622955ed0e4743c99b3c22e = $(`<div id="html_aef5a5afd622955ed0e4743c99b3c22e" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 50</b></br></hr><ul><li>Station Name -- "Barcelona - Ciutadella"<li>Location -- "Parc de la Ciutadella"<li>District Code -- "1"<li>District Name -- "Ciutat Vella"<li>Neighborhood Code -- "4"<li>Neighborhood Name -- "Sant Pere, Santa Caterina i la Ribera"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1874"<li>Latitude -- "41.3864"<li>Contaminants Codes -- "[8, 14, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_4da2209528816263589633ae95087278.setContent(html_aef5a5afd622955ed0e4743c99b3c22e);
+            
+        
+
+        marker_bb901bd6de43ca09b124bd8759e7e043.bindPopup(popup_4da2209528816263589633ae95087278)
+        ;
+
+        
+    
+    
+            var marker_9730662bc5d99551619bf58ee2308abe = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_f146d944d5b7cdaf37af6995eb8a1e21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cc7efa07675068e18785c3621883b51 = $(`<div id="html_8cc7efa07675068e18785c3621883b51" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 54</b></br></hr><ul><li>Station Name -- "Barcelona - Vall Hebron"<li>Location -- "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella"<li>District Code -- "7"<li>District Name -- "Horta-Guinardo"<li>Neighborhood Code -- "41"<li>Neighborhood Name -- "la Vall d'Hebron"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.148"<li>Latitude -- "41.4261"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 12, 7]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']"</ul></div></div>`)[0];
+                popup_f146d944d5b7cdaf37af6995eb8a1e21.setContent(html_8cc7efa07675068e18785c3621883b51);
+            
+        
+
+        marker_9730662bc5d99551619bf58ee2308abe.bindPopup(popup_f146d944d5b7cdaf37af6995eb8a1e21)
+        ;
+
+        
+    
+    
+            var marker_f0c5a58421ba8c5b26e5fb98fa57ad12 = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_43a9763e6e66bffd967d403a7963dd4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccdb791b849637746f848d41eee01403 = $(`<div id="html_ccdb791b849637746f848d41eee01403" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 57</b></br></hr><ul><li>Station Name -- "Barcelona - Palau Reial"<li>Location -- "c/ John Maynard Keynes - c/ de Jordi Girona"<li>District Code -- "4"<li>District Name -- "Les Corts"<li>Neighborhood Code -- "21"<li>Neighborhood Name -- "Pedralbes"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1151"<li>Latitude -- "41.3875"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_43a9763e6e66bffd967d403a7963dd4b.setContent(html_ccdb791b849637746f848d41eee01403);
+            
+        
+
+        marker_f0c5a58421ba8c5b26e5fb98fa57ad12.bindPopup(popup_43a9763e6e66bffd967d403a7963dd4b)
+        ;
+
+        
+    
+    
+            var marker_568348bf15d030579cf5a9629de68073 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a49d52022ac240485a6b909cd4712a9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49a289dafec6b859c311427511b15a54 = $(`<div id="html_49a289dafec6b859c311427511b15a54" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 4</b></br><hr><ul><li>Station Name -- "Barcelona - Poblenou"<li>Location -- "Plaça Josep Trueta (Pujades - Lope de Vega)"<li>District Code -- "10"<li>District Name -- "Sant Marti"<li>Neighborhood Code -- "68"<li>Neighborhood Name -- "el Poblenou"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.2045"<li>Latitude -- "41.4039"<li>Contaminants Codes -- "[8, 10, 7, 12]"<li>Contaminants Names -- "['NO2', 'PM10', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_a49d52022ac240485a6b909cd4712a9b.setContent(html_49a289dafec6b859c311427511b15a54);
+            
+        
+
+        marker_568348bf15d030579cf5a9629de68073.bindPopup(popup_a49d52022ac240485a6b909cd4712a9b)
+        ;
+
+        
+    
+    
+            var marker_3458ddcf9c3e38ae4248be6674a5f5a9 = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a8ebe856c224a7e68b569a7adc20ab7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dafa2370c2d733556385259cb0352677 = $(`<div id="html_dafa2370c2d733556385259cb0352677" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 42</b></br><hr><ul><li>Station Name -- "Barcelona - Sants"<li>Location -- "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)"<li>District Code -- "3"<li>District Name -- "Sants-Montjuic"<li>Neighborhood Code -- "18"<li>Neighborhood Name -- "Sants"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1331"<li>Latitude -- "41.3788"<li>Contaminants Codes -- "[8, 7, 12]"<li>Contaminants Names -- "['NO2', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_a8ebe856c224a7e68b569a7adc20ab7a.setContent(html_dafa2370c2d733556385259cb0352677);
+            
+        
+
+        marker_3458ddcf9c3e38ae4248be6674a5f5a9.bindPopup(popup_a8ebe856c224a7e68b569a7adc20ab7a)
+        ;
+
+        
+    
+    
+            var marker_575164e4e8db33f686e5af8faa6bf76a = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2899505eb13f9fe3fc74e6a2a7a21314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04dc3750f9adbfc6083079833d6ee9c3 = $(`<div id="html_04dc3750f9adbfc6083079833d6ee9c3" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 43</b></br><hr><ul><li>Station Name -- "Barcelona - Eixample"<li>Location -- "Av. Roma - c/ Comte Urgell"<li>District Code -- "5"<li>District Name -- "Eixample"<li>Neighborhood Code -- "9"<li>Neighborhood Name -- "la Nova Esquerra de l'Eixample"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1538"<li>Latitude -- "41.3853"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_2899505eb13f9fe3fc74e6a2a7a21314.setContent(html_04dc3750f9adbfc6083079833d6ee9c3);
+            
+        
+
+        marker_575164e4e8db33f686e5af8faa6bf76a.bindPopup(popup_2899505eb13f9fe3fc74e6a2a7a21314)
+        ;
+
+        
+    
+    
+            var marker_9a9a5534bc0200a7cd6b514a2d9d115f = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_e857a8b46a9ce9b0f591e830dc9aa71b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ac0eaa5f4557748b8281fe3203dce1d = $(`<div id="html_0ac0eaa5f4557748b8281fe3203dce1d" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 44</b></br><hr><ul><li>Station Name -- "Barcelona - Gràcia"<li>Location -- "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)"<li>District Code -- "6"<li>District Name -- "Gracia"<li>Neighborhood Code -- "31"<li>Neighborhood Name -- "la Vila de Gracia"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Trànsit"<li>Longitude -- "2.1534"<li>Latitude -- "41.3987"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_e857a8b46a9ce9b0f591e830dc9aa71b.setContent(html_0ac0eaa5f4557748b8281fe3203dce1d);
+            
+        
+
+        marker_9a9a5534bc0200a7cd6b514a2d9d115f.bindPopup(popup_e857a8b46a9ce9b0f591e830dc9aa71b)
+        ;
+
+        
+    
+    
+            var marker_ce9244834c39ea0fe9a726e274c57c8a = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_8877e79c201241e54648b71a4456290c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99ae4f5c025db24eed14fd087b49e59b = $(`<div id="html_99ae4f5c025db24eed14fd087b49e59b" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 50</b></br><hr><ul><li>Station Name -- "Barcelona - Ciutadella"<li>Location -- "Parc de la Ciutadella"<li>District Code -- "1"<li>District Name -- "Ciutat Vella"<li>Neighborhood Code -- "4"<li>Neighborhood Name -- "Sant Pere, Santa Caterina i la Ribera"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1874"<li>Latitude -- "41.3864"<li>Contaminants Codes -- "[8, 14, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_8877e79c201241e54648b71a4456290c.setContent(html_99ae4f5c025db24eed14fd087b49e59b);
+            
+        
+
+        marker_ce9244834c39ea0fe9a726e274c57c8a.bindPopup(popup_8877e79c201241e54648b71a4456290c)
+        ;
+
+        
+    
+    
+            var marker_9b3a1116bbc55098aa833f756a0bcfae = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_df30706f2fb1fe6ac15b3a2dd8856fd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fa9c993b706e19bb5442157728757f1 = $(`<div id="html_6fa9c993b706e19bb5442157728757f1" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 54</b></br><hr><ul><li>Station Name -- "Barcelona - Vall Hebron"<li>Location -- "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella"<li>District Code -- "7"<li>District Name -- "Horta-Guinardo"<li>Neighborhood Code -- "41"<li>Neighborhood Name -- "la Vall d'Hebron"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.148"<li>Latitude -- "41.4261"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 12, 7]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']"</ul></div></div>`)[0];
+                popup_df30706f2fb1fe6ac15b3a2dd8856fd1.setContent(html_6fa9c993b706e19bb5442157728757f1);
+            
+        
+
+        marker_9b3a1116bbc55098aa833f756a0bcfae.bindPopup(popup_df30706f2fb1fe6ac15b3a2dd8856fd1)
+        ;
+
+        
+    
+    
+            var marker_a757e7f4c8bba3f881ae71572fd4f734 = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2ededdb1eb99f5740edf4b47ed363d36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_024634ded6337b6f5f606dfd9719bf38 = $(`<div id="html_024634ded6337b6f5f606dfd9719bf38" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 57</b></br><hr><ul><li>Station Name -- "Barcelona - Palau Reial"<li>Location -- "c/ John Maynard Keynes - c/ de Jordi Girona"<li>District Code -- "4"<li>District Name -- "Les Corts"<li>Neighborhood Code -- "21"<li>Neighborhood Name -- "Pedralbes"<li>Station Class -- "Urbana"<li>Station Sub-Class -- "Fons"<li>Longitude -- "2.1151"<li>Latitude -- "41.3875"<li>Contaminants Codes -- "[8, 14, 10, 1, 6, 7, 12]"<li>Contaminants Names -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_2ededdb1eb99f5740edf4b47ed363d36.setContent(html_024634ded6337b6f5f606dfd9719bf38);
+            
+        
+
+        marker_a757e7f4c8bba3f881ae71572fd4f734.bindPopup(popup_2ededdb1eb99f5740edf4b47ed363d36)
+        ;
+
+        
+    
+    
+            var marker_0ea2c79104147bdd71f21d92641771e0 = L.marker(
+                [41.4039, 2.2045],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_a524e7da33b8871bc17c4920d0cea1e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d4c50552e8aa09f320eafb2ca70d7cd = $(`<div id="html_7d4c50552e8aa09f320eafb2ca70d7cd" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 4</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Poblenou"<li><b><i>Location</i></b> -- "Plaça Josep Trueta (Pujades - Lope de Vega)"<li><b><i>District Code</i></b> -- "10"<li><b><i>District Name</i></b> -- "Sant Marti"<li><b><i>Neighborhood Code</i></b> -- "68"<li><b><i>Neighborhood Name</i></b> -- "el Poblenou"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Fons"<li><b><i>Longitude</i></b> -- "2.2045"<li><b><i>Latitude</i></b> -- "41.4039"<li><b><i>Contaminants Codes</i></b> -- "[8, 10, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'PM10', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_a524e7da33b8871bc17c4920d0cea1e3.setContent(html_7d4c50552e8aa09f320eafb2ca70d7cd);
+            
+        
+
+        marker_0ea2c79104147bdd71f21d92641771e0.bindPopup(popup_a524e7da33b8871bc17c4920d0cea1e3)
+        ;
+
+        
+    
+    
+            var marker_c379e8ed21d590765fd1748185a1c132 = L.marker(
+                [41.3788, 2.1331],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_065545352fed90a8a8c6d3050d8ef0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34cb4c366d5a0ca0e69c424655642443 = $(`<div id="html_34cb4c366d5a0ca0e69c424655642443" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 42</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Sants"<li><b><i>Location</i></b> -- "Jardins de Can Mantega (Joan Güell - Violant d’Hongria)"<li><b><i>District Code</i></b> -- "3"<li><b><i>District Name</i></b> -- "Sants-Montjuic"<li><b><i>Neighborhood Code</i></b> -- "18"<li><b><i>Neighborhood Name</i></b> -- "Sants"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Fons"<li><b><i>Longitude</i></b> -- "2.1331"<li><b><i>Latitude</i></b> -- "41.3788"<li><b><i>Contaminants Codes</i></b> -- "[8, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_065545352fed90a8a8c6d3050d8ef0c8.setContent(html_34cb4c366d5a0ca0e69c424655642443);
+            
+        
+
+        marker_c379e8ed21d590765fd1748185a1c132.bindPopup(popup_065545352fed90a8a8c6d3050d8ef0c8)
+        ;
+
+        
+    
+    
+            var marker_03107facafbeff4612a97c5c88adcc84 = L.marker(
+                [41.3853, 2.1538],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_2ddaa693c5430a8523aa5ee6162782cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4395932e4ebaed16db4bf36e11cb80a = $(`<div id="html_a4395932e4ebaed16db4bf36e11cb80a" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 43</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Eixample"<li><b><i>Location</i></b> -- "Av. Roma - c/ Comte Urgell"<li><b><i>District Code</i></b> -- "5"<li><b><i>District Name</i></b> -- "Eixample"<li><b><i>Neighborhood Code</i></b> -- "9"<li><b><i>Neighborhood Name</i></b> -- "la Nova Esquerra de l'Eixample"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Trànsit"<li><b><i>Longitude</i></b> -- "2.1538"<li><b><i>Latitude</i></b> -- "41.3853"<li><b><i>Contaminants Codes</i></b> -- "[8, 14, 10, 1, 6, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_2ddaa693c5430a8523aa5ee6162782cb.setContent(html_a4395932e4ebaed16db4bf36e11cb80a);
+            
+        
+
+        marker_03107facafbeff4612a97c5c88adcc84.bindPopup(popup_2ddaa693c5430a8523aa5ee6162782cb)
+        ;
+
+        
+    
+    
+            var marker_2569ddede802c1d4af2ae44d975a1382 = L.marker(
+                [41.3987, 2.1534],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_b833dc57d3267b5c4c0fd7c31064e5e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2e5227ff000f79814baf86d1a50eae6 = $(`<div id="html_c2e5227ff000f79814baf86d1a50eae6" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 44</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Gràcia"<li><b><i>Location</i></b> -- "Plaça Gal·la Placídia (Via Augusta - Travessera de Gràcia)"<li><b><i>District Code</i></b> -- "6"<li><b><i>District Name</i></b> -- "Gracia"<li><b><i>Neighborhood Code</i></b> -- "31"<li><b><i>Neighborhood Name</i></b> -- "la Vila de Gracia"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Trànsit"<li><b><i>Longitude</i></b> -- "2.1534"<li><b><i>Latitude</i></b> -- "41.3987"<li><b><i>Contaminants Codes</i></b> -- "[8, 14, 10, 1, 6, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_b833dc57d3267b5c4c0fd7c31064e5e8.setContent(html_c2e5227ff000f79814baf86d1a50eae6);
+            
+        
+
+        marker_2569ddede802c1d4af2ae44d975a1382.bindPopup(popup_b833dc57d3267b5c4c0fd7c31064e5e8)
+        ;
+
+        
+    
+    
+            var marker_b6a48c9898322f9f3b2164c846752096 = L.marker(
+                [41.3864, 2.1874],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_529942eb6a2a63d8c1c95d130bf0f45c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e7d9d3957f64d4e813f15c56d934b7 = $(`<div id="html_d3e7d9d3957f64d4e813f15c56d934b7" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 50</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Ciutadella"<li><b><i>Location</i></b> -- "Parc de la Ciutadella"<li><b><i>District Code</i></b> -- "1"<li><b><i>District Name</i></b> -- "Ciutat Vella"<li><b><i>Neighborhood Code</i></b> -- "4"<li><b><i>Neighborhood Name</i></b> -- "Sant Pere, Santa Caterina i la Ribera"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Fons"<li><b><i>Longitude</i></b> -- "2.1874"<li><b><i>Latitude</i></b> -- "41.3864"<li><b><i>Contaminants Codes</i></b> -- "[8, 14, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'O3', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_529942eb6a2a63d8c1c95d130bf0f45c.setContent(html_d3e7d9d3957f64d4e813f15c56d934b7);
+            
+        
+
+        marker_b6a48c9898322f9f3b2164c846752096.bindPopup(popup_529942eb6a2a63d8c1c95d130bf0f45c)
+        ;
+
+        
+    
+    
+            var marker_b2356002e73d705f351f5b422c2c7c76 = L.marker(
+                [41.4261, 2.148],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_935c32aec89b7a17031b4a14d4052fac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e749231d1259c2b51d720f7e6b692713 = $(`<div id="html_e749231d1259c2b51d720f7e6b692713" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 54</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Vall Hebron"<li><b><i>Location</i></b> -- "Parc de la Vall d’Hebron. c/ Martí Codolar - c/ Granja Vella"<li><b><i>District Code</i></b> -- "7"<li><b><i>District Name</i></b> -- "Horta-Guinardo"<li><b><i>Neighborhood Code</i></b> -- "41"<li><b><i>Neighborhood Name</i></b> -- "la Vall d'Hebron"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Fons"<li><b><i>Longitude</i></b> -- "2.148"<li><b><i>Latitude</i></b> -- "41.4261"<li><b><i>Contaminants Codes</i></b> -- "[8, 14, 10, 1, 6, 12, 7]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NOx', 'NO']"</ul></div></div>`)[0];
+                popup_935c32aec89b7a17031b4a14d4052fac.setContent(html_e749231d1259c2b51d720f7e6b692713);
+            
+        
+
+        marker_b2356002e73d705f351f5b422c2c7c76.bindPopup(popup_935c32aec89b7a17031b4a14d4052fac)
+        ;
+
+        
+    
+    
+            var marker_8275e87c53a51f43931b295c1180325b = L.marker(
+                [41.3875, 2.1151],
+                {}
+            ).addTo(map_6594c04996cdf876673bd805997efba1);
+        
+    
+        var popup_9bd019ff0cdbc4616fe04b7507ffc567 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc8df44bb40ff108a33e4acfdd496a88 = $(`<div id="html_dc8df44bb40ff108a33e4acfdd496a88" style="width: 100.0%; height: 100.0%;"><div style="min-width: 400px;" ><b>Station Id: 57</b></br><ul><li><b><i>Station Name</i></b> -- "Barcelona - Palau Reial"<li><b><i>Location</i></b> -- "c/ John Maynard Keynes - c/ de Jordi Girona"<li><b><i>District Code</i></b> -- "4"<li><b><i>District Name</i></b> -- "Les Corts"<li><b><i>Neighborhood Code</i></b> -- "21"<li><b><i>Neighborhood Name</i></b> -- "Pedralbes"<li><b><i>Station Class</i></b> -- "Urbana"<li><b><i>Station Sub-Class</i></b> -- "Fons"<li><b><i>Longitude</i></b> -- "2.1151"<li><b><i>Latitude</i></b> -- "41.3875"<li><b><i>Contaminants Codes</i></b> -- "[8, 14, 10, 1, 6, 7, 12]"<li><b><i>Contaminants Names</i></b> -- "['NO2', 'O3', 'PM10', 'SO2', 'CO', 'NO', 'NOx']"</ul></div></div>`)[0];
+                popup_9bd019ff0cdbc4616fe04b7507ffc567.setContent(html_dc8df44bb40ff108a33e4acfdd496a88);
+            
+        
+
+        marker_8275e87c53a51f43931b295c1180325b.bindPopup(popup_9bd019ff0cdbc4616fe04b7507ffc567)
+        ;
+
+        
+    
+</script>
+</html>
