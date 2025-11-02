@@ -1,0 +1,50 @@
+videos:
+
+https://www.analyticsvidhya.com/blog/2022/06/time-series-forecasting-using-python/
+https://www.kaggle.com/code/prashant111/complete-guide-on-time-series-analysis-in-python
+https://www.youtube.com/watch?v=fxx_E0ojKrc
+https://www.youtube.com/watch?v=eKiXtGzEjos
+https://youtu.be/FPM6it4v8MY?si=8Gx2LKQ3neoLDpqW
+https://www.youtube.com/watch?v=ZoJ2OctrFLA&list=PLvcbYUQ5t0UHOLnBzl46_Q6QKtFgfMGc3
+https://youtu.be/_ZQ-lQrK9Rg?si=OCWnndROFbd38lcY
+https://youtu.be/ZoJ2OctrFLA?si=80HhB8ciztI41bNU
+https://youtu.be/whmI0WHuIK4?si=1hG1xUHYNv_1ACdQ
+https://youtu.be/KDzETC-YqRM?si=BFWXb0tECLGQMoSS
+https://youtu.be/i7HARZlJv7Y?si=Zn8liKMbq0IPBO8H
+https://youtu.be/JMUxmLyrhSk?si=Zt9UiVlolIbXNJlD
+
+https://www.youtube.com/watch?v=HZ7skzUMQY4
+
+data_sourse:
+
+https://opendata-ajuntament.barcelona.cat/data/en/dataset/contaminants-estacions-mesura-qualitat-aire
+
+github repos:
+
+https://github.com/DataForScience/Timeseries
+https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython
+https://github.com/marcopeix/TimeSeriesForecastingInPython
+https://github.com/rouseguy/TimeSeriesAnalysiswithPython
+https://github.com/chriso/timeseries
+https://github.com/atodorov284/air-quality-forecast
+https://github.com/LukaszSawala/air-quality-forecast
+https://github.com/Kirang96/Air-quality-prediction
+
+most_important_contaminants:
+
+https://www.google.com/search?client=firefox-b-d&q=what+are+the+most+important+contaminants+in+air+quality+in+the+city+of+barcelona&sei=941MaPngFeapkdUPxtjw4As
+
+* https://www.kaggle.com/code/karankrishna/india-air-quality-analysis
+* https://www.kaggle.com/code/dianalaveena/air-quality-nov2017-randomforest-accuracy-99
+* https://www.kaggle.com/code/gaurav06/barcelona-city-a-comprehensive-study
+* https://www.kaggle.com/code/jaredseguin/predicting-barcelona-air-quality-with-logistic-reg
+* https://www.kaggle.com/datasets/chaozhuang/low-cost-sensors-for-air-pollution-monitoring
+* https://www.kaggle.com/code/doaajaber/barcelona-data
+
+ts_libraries:
+https://pypi.org/project/autots/
+https://tsfresh.readthedocs.io/en/latest/
+https://www.google.com/search?client=firefox-b-d&q=kats+python
+https://www.google.com/search?client=firefox-b-d&q=darts+python
+https://www.sktime.net/en/stable/
+
