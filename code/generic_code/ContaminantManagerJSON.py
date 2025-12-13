@@ -57,7 +57,7 @@ class ContaminantManagerJSON:
         
 if __name__ == '__main__':
     
-    contaminants_json_file_path = './../../data/processed/contaminants/contaminants.json'
+    contaminants_json_file_path = './../../data/gold/contaminants/contaminants.json'
     c_manager_obj = ContaminantManagerJSON(contaminants_json_file_path)
     
     print("Get all contaminants [ContaminantManagerJSON class]")
