@@ -7,7 +7,6 @@
 (this one has the description of the fields)
 * https://opendata-ajuntament.barcelona.cat/data/en/dataset/contaminants-estacions-mesura-qualitat-aire
 
-#################################################################################################
 
 ##########################################
 #                 Stations               #
@@ -17,10 +16,10 @@
 * https://opendata-ajuntament.barcelona.cat/data/en/dataset/qualitat-aire-estacions-bcn
 
 
-#################################################################################################
 
 ##########################################
 #                Measurements            #
 ##########################################
 
 * https://opendata-ajuntament.barcelona.cat/data/en/dataset/qualitat-aire-detall-bcn
+
