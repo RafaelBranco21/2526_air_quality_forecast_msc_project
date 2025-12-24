@@ -1,5 +1,5 @@
 import pandas as pd
-import contaminants as conts
+import generic_code.contaminants as conts
 
 
 STATIONS_BASE_PATH = './../data/original_data/stations_data'
