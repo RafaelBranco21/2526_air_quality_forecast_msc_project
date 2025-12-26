@@ -192,17 +192,17 @@ if __name__ == '__main__':
     print("Current directory:", os.getcwd(), '\n')    
 
     contaminants_json_file_path = './../data/gold/contaminants/contaminants.json'
-    c_manager_obj = ContaminantManagerJSON(contaminants_json_file_path)
+    contaminant_manager = ContaminantManagerJSON(contaminants_json_file_path)
     
     print("Get all contaminants [ContaminantManagerJSON class]")
-    pp.pprint(c_manager_obj.get_all_contaminants())
+    pp.pprint(contaminant_manager.get_all_contaminants())
     
     
     print('\n')
     print("Get contaminant data by description [ContaminantManagerJSON class]\n")
 
     for description in ("PM10", "PM2_5", "SO2", "CO", "INVALID"):
-        data = c_manager_obj.get_contaminant_data_by_description(description)
+        data = contaminant_manager.get_contaminant_data_by_description(description)
         print(f"'{description}' data => {data}")
     
     
@@ -210,7 +210,7 @@ if __name__ == '__main__':
     print("Get contaminant units by description [ContaminantManagerJSON class]\n")
     
     for description in ("PM10", "PM2_5", "SO2", "CO", "INVALID"):
-        unit = c_manager_obj.get_units_by_description(description)
+        unit = contaminant_manager.get_units_by_description(description)
         print(f"'{description}' units => {unit}")
     
     
@@ -221,7 +221,7 @@ if __name__ == '__main__':
                              (1, "SO2"), (101, "SO2"), (6, "CO"), (106, "CO"), (999, "INVALID"))
 
     for numeric_code, expected in contaminants_mapping:
-        description = c_manager_obj.get_description_by_code(numeric_code)
+        description = contaminant_manager.get_description_by_code(numeric_code)
         print(f"Code '{numeric_code}' (expected: '{expected}') => {description}")
     
     
@@ -230,22 +230,22 @@ if __name__ == '__main__':
     
     # Test get_codes_by_description
     for description in ("PM10", "PM2_5", "SO2", "INVALID"):
-        codes = c_manager_obj.get_codes_by_description(description)
+        codes = contaminant_manager.get_codes_by_description(description)
         print(f"get_codes_by_description('{description}') => {codes}")
     
     # Test has_contaminant
     for description in ("PM10", "PM2_5", "CO", "INVALID"):
-        exists = c_manager_obj.has_contaminant(description)
+        exists = contaminant_manager.has_contaminant(description)
         print(f"has_contaminant('{description}') => {exists}")
     
     # Test has_contaminant_by_code
     for numeric_code in (10, 110, 6, 999):
-        exists = c_manager_obj.has_contaminant_by_code(numeric_code)
+        exists = contaminant_manager.has_contaminant_by_code(numeric_code)
         print(f"has_contaminant_by_code({numeric_code}) => {exists}")
     
     # Test to_dataframe
     print('\n')
-    print("to_dataframe() output:")
-    df = c_manager_obj.to_dataframe()
+    print("ContaminantManagerJSON.to_dataframe() output:")
+    df = contaminant_manager.to_dataframe()
     print(df)
     
