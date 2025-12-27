@@ -136,35 +136,6 @@ class ContaminantManagerJSON:
         return list(codes)
 
 
-    def has_contaminant(self, contaminant_description: str) -> bool:
-        """Return True if the contaminant description exists.
-
-        Args:
-            contaminant_description: Contaminant description (e.g., 'PM10'). Whitespace is stripped.
-        Returns:
-            True if present in the dataset, otherwise False.
-        """
-
-        contaminant_description = contaminant_description.strip()
-        return contaminant_description in self._json_contaminants_data.keys()
-
-
-    def has_contaminant_by_code(self, numeric_code: int) -> bool:
-        """Return True if any contaminant contains the numeric code.
-
-        Args:
-            numeric_code: Numeric contaminant code.
-        Returns:
-            True if found in any contaminant, otherwise False.
-        """
-
-        for value in self._json_contaminants_data.values():
-            if numeric_code in value.get("codes", []):
-                return True
-            
-        return False
-
-
     def to_dataframe(self) -> pd.DataFrame:
         """Return contaminant data as a pandas DataFrame.
 
