@@ -1,17 +1,17 @@
-code,description,unit
-1,SO2,µg/m³
-6,CO,mg/m³
-7,NO,µg/m³
-8,NO2,µg/m³
-9,PM2_5,µg/m³
-10,PM10,µg/m³
-12,NOx,µg/m³
-14,O3,µg/m³
-101,SO2,µg/m³
-106,CO,mg/m³
-107,NO,µg/m³
-108,NO2,µg/m³
-109,PM2_5,µg/m³
-110,PM10,µg/m³
-112,NOx,µg/m³
-114,O3,µg/m³
+code,description,text_description,original_description,extended_description,unit,is_original_contaminant
+1,SO2,Sulfur Dioxide,SO2,SO2 (original),µg/m³,True
+6,CO,Carbon Monoxide,CO,CO (original),mg/m³,True
+7,NO,Nitric Oxide,NO,NO (original),µg/m³,True
+8,NO2,Nitrogen Dioxide,NO2,NO2 (original),µg/m³,True
+9,PM2_5,Fine Particulate Matter,PM2_5,PM2_5 (original),µg/m³,True
+10,PM10,Coarse Particulate Matter,PM10,PM10 (original),µg/m³,True
+12,NOx,Nitrogen Oxides,NOx,NOx (original),µg/m³,True
+14,O3,Ozone,O3,O3 (original),µg/m³,True
+101,SO2,Sulfur Dioxide,SO2*,SO2 (extended),µg/m³,False
+106,CO,Carbon Monoxide,CO*,CO (extended),mg/m³,False
+107,NO,Nitric Oxide,NO*,NO (extended),µg/m³,False
+108,NO2,Nitrogen Dioxide,NO2*,NO2 (extended),µg/m³,False
+109,PM2_5,Fine Particulate Matter,PM2_5*,PM2_5 (extended),µg/m³,False
+110,PM10,Coarse Particulate Matter,PM10*,PM10 (extended),µg/m³,False
+112,NOx,Nitrogen Oxides,NOx*,NOx (extended),µg/m³,False
+114,O3,Ozone,O3*,O3 (extended),µg/m³,False
