@@ -9,7 +9,9 @@ import re
 
 # Auto eda packages references:
 # https://www.nb-data.com/p/python-packages-for-automated-eda
-# usar: sweetviz, dtale, autoviz, ydata-profiling
+# experimentar várias opções
+# instalei missingno, pandas-profiling, sweetviz, dtale, jupyter-summarytools
+# see gemini chat
 
 
 class StationMetadata:
@@ -53,6 +55,7 @@ class StationMetadata:
         # esta classe vem depois da outra e usa os metodos para criar a metadata
         # talvez seja melhor criar uma funcao que cria a metadata e retorna um dicionario
         # Colocar em outro ficheiro .py
+        # pensar antes de programar e pensar em file de metadata
 
 
 class StationEDAHelper:
