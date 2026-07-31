@@ -15,3 +15,13 @@ def print_sep(length: int = 80, char_to_use: str = "=", end_newline: bool = Fals
     print(char_to_use * length)
     if end_newline:
         print()
+
+def print_2D_shape_from_dataframe(df_shape: tuple, msg: str="DataFrame Shape") -> None:
+    """
+    Print the shape of a 2D DataFrame in a formatted way.
+    Args:
+        df_shape (tuple): The shape of the DataFrame (rows, columns).
+        msg (str): A message to display before the shape information.
+    """
+    rows, columns = df_shape
+    print(f"{msg} > rows: '{rows}', columns: '{columns}'", sep='')
