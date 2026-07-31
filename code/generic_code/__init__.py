@@ -1,13 +1,16 @@
 """Package initializer for `generic_code`.
 
-Provides convenient access to the `ContaminantManagerJSON` and `StationEDAHelper` classes:
+Provides convenient access to the `ContaminantManagerJSON`, `StationEDAHelper` classes,
+and utility functions:
 
 	from generic_code import ContaminantManagerJSON
 	from generic_code import StationEDAHelper
+	from generic_code import print_sep
 
 """
 
 from .ContaminantManagerJSON import ContaminantManagerJSON
 from .StationEDAHelper import StationEDAHelper
+from .util import print_sep
 
-__all__ = ["ContaminantManagerJSON", "StationEDAHelper"]
+__all__ = ["ContaminantManagerJSON", "StationEDAHelper", "print_sep"]
