@@ -149,8 +149,8 @@ class ContaminantManagerJSON:
         return data.get("is_original_contaminant", {}).get(str(numeric_code), False)
 
 
-    def get_description_by_code(self, numeric_code: int) -> dict[str, Any] | None:
-        """Retrieves detailed information for a contaminant by its numeric code.
+    def get_metadata_summary_by_code(self, numeric_code: int) -> dict[str, Any] | None:
+        """Return a metadata summary for a contaminant numeric code.
 
         Args:
             numeric_code (int): Numeric contaminant code (e.g., 10, 109).
@@ -161,12 +161,13 @@ class ContaminantManagerJSON:
                 - original_description (str): Original name from source data
                 - extended_description (str): Long-form description
                 - is_original_contaminant (bool): Whether this is an original contaminant
+                - text_description (str): Human-readable contaminant label
                 Returns None if the code is not found.
 
         Examples:
-            >>> manager.get_description_by_code(10)
+            >>> manager.get_metadata_summary_by_code(10)
             {'description': 'PM10', 'original_description': '...', ...}
-            >>> manager.get_description_by_code(999)
+            >>> manager.get_metadata_summary_by_code(999)
             None
         """
         if not isinstance(numeric_code, int):
@@ -181,7 +182,8 @@ class ContaminantManagerJSON:
             "description": description,
             "original_description": data.get("original_description", {}).get(str(numeric_code), ""),
             "extended_description": data.get("extended_description", {}).get(str(numeric_code), ""),
-            "is_original_contaminant": data.get("is_original_contaminant", {}).get(str(numeric_code), False)
+            "is_original_contaminant": data.get("is_original_contaminant", {}).get(str(numeric_code), False),
+            "text_description": data.get("text_description", "")
         }
     
     def get_codes_by_description(self, contaminant_description: str) -> list[int] | None:
@@ -451,12 +453,12 @@ if __name__ == '__main__':
 
     print('\n')
     print_sep()
-    print("Get contaminant units by description [ContaminantManagerJSON class]")
+    print("Get contaminant measurement unit by description [ContaminantManagerJSON class]")
     print_sep(end_newline=True)
         
     for description in ("PM10", "PM2_5", "SO2", "CO", "INVALID"):
         unit = contaminant_manager.get_unit_by_description(description)
-        print(f"'{description}' units => {unit}")
+        print(f"'{description}' measurement unit => {unit}")
 
     
     print('\n')
@@ -481,14 +483,14 @@ if __name__ == '__main__':
     
     print('\n')
     print_sep()
-    print("Get contaminant description by code [ContaminantManagerJSON class]")
+    print("Get contaminant metadata summary by code [ContaminantManagerJSON class]")
     print_sep(end_newline=True)
 
     contaminants_mapping = ((10, "PM10"), (110, "PM10"), (9, "PM2_5"), (109, "PM2_5"),
                              (1, "SO2"), (101, "SO2"), (6, "CO"), (106, "CO"), (999, "INVALID"))
 
     for numeric_code, expected in contaminants_mapping:
-        description = contaminant_manager.get_description_by_code(numeric_code)
+        description = contaminant_manager.get_metadata_summary_by_code(numeric_code)
         print(f"Code '{numeric_code}' (expected: '{expected}') => ")
         pp.pprint(description)
         print('\n')
