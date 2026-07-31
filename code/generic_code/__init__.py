@@ -11,6 +11,19 @@ and utility functions:
 
 from .ContaminantManagerJSON import ContaminantManagerJSON
 from .StationEDAHelper import StationEDAHelper
-from .util import print_sep
+#from .station_pipeline import run_station_pipeline
+#from .station_pipeline import discover_station_years
+#from .station_pipeline import compare_years
+#from .station_pipeline import compare_years_sequence
+from .util import print_sep, print_2D_shape_from_dataframe
 
-__all__ = ["ContaminantManagerJSON", "StationEDAHelper", "print_sep"]
+__all__ = [
+	"ContaminantManagerJSON",
+	"StationEDAHelper",
+	#"run_station_pipeline",
+	#"discover_station_years",
+	#"compare_years",
+	#"compare_years_sequence",
+	"print_sep",
+	"print_2D_shape_from_dataframe",
+]
